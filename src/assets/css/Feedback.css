@@ -1,0 +1,33 @@
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+}
+
+.feedback-container .feedback-title {
+  font-size: calc(1rem + 1vw); /* Tamaño de fuente inicial más un tamaño adicional que aumenta con el ancho de la ventana */
+  font-weight: 700;
+  color: #025949;
+  margin-bottom: 70px;
+}
+
+.feedback-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 80px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+

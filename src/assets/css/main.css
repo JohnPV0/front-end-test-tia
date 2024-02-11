@@ -1,0 +1,12 @@
+body {
+  background-color: #c8d3d9 !important;
+}
+
+.full-width-row {
+  width: 100%;
+  margin: 0;
+}
+
+.full-width-col {
+  width: 100%;
+}

@@ -1,0 +1,104 @@
+.cover-container {
+  background-color: #112e40;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cover-container .cover-content {
+  position: absolute;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-container .cover-title {
+  text-align: center;
+  padding: 0 20px;
+  
+}
+
+.cover-container .cover-title h1 {
+  color: #1fbf91;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cover-container .cover-subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #c8d3d9;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.cover-container .cover-content .cover-btn {
+  background-color: #6cd9ba;
+  border: 3px solid #025949;
+  border-radius: 50px;
+  color: #112e40;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+  transition: border-color 0.3s ease;
+}
+
+.cover-container .cover-content .cover-btn:hover {
+  background-color: #025949;
+  color: #6cd9ba;
+  border-color: #1fbf91;
+}
+
+.cover-cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-wrap: wrap;
+  top: 80%;
+  z-index: 1;
+}
+
+.cover-cards-container .cover-card {
+  background-color: #1cc8a0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 7px solid #1fbf91;
+  padding: 20px;
+  margin: 0 30px;
+  margin-top: 20px;
+  width: calc(33.33% - 20px); /* Por defecto, cada CoverCard ocupa 33.33% del ancho */
+  max-width: 300px; /* Ancho máximo de cada CoverCard */
+  height: 25vh;
+}
+
+/* Media queries para ajustar el número de CoverCards por fila en diferentes tamaños de pantalla */
+@media (max-width: 1200px) {
+  .cover-cards-container .cover-card {
+    width: calc(50% - 20px); /* En pantallas más pequeñas, cada CoverCard ocupa 50% del ancho */
+  }
+}
+
+@media (max-width: 768px) {
+  .cover-cards-container .cover-card {
+    width: calc(100% - 20px); /* En pantallas aún más pequeñas, cada CoverCard ocupa 100% del ancho */
+  }
+
+}

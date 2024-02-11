@@ -1,0 +1,58 @@
+.photos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.photos-container .photos-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #025949;
+  margin-bottom: 70px;
+}
+
+.photos-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.photos-content .photo-item1 {
+  background-color: #1fbf91;
+  height: 300px;
+  width: 300px;
+  border: 5px solid #025949;
+}
+
+.photos-content .photo-item2 {
+  background-color: #1fbf91;
+  height: 300px;
+  width: 300px;
+  background: repeating-linear-gradient(
+    -45deg,
+    #025949,
+    #025949 10px,
+    #1fbf91 10px,
+    #1fbf91 20px
+  );
+}
+
+.photo-item1, .photo-item2 {
+  flex: 1 0 21%; /* por defecto, los elementos tomarán al menos el 21% del ancho del contenedor */
+  margin: 1%;
+  height: 200px; /* ajusta esto a tus necesidades */
+}
+
+@media (max-width: 1200px) {
+  .photo-item1, .photo-item2 {
+    flex: 1 0 46%; /* en pantallas pequeñas, los elementos tomarán al menos el 46% del ancho del contenedor */
+  }
+}

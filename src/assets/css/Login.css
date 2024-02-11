@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1fbf91;
+  border-radius: 7px;
+}
+
+.login-card .login-card-title {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.login-card .login-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 20px 0 20px 0px;
+  width: 100%;
+}
+
+
+.login-card .login-card-body .login-card-fields {
+  margin-bottom: 3rem;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+
+.login-card .login-card-body .form-group {
+  margin-bottom: 1rem;
+}
+
+.login-card .login-card-body .form-group label {
+  margin-bottom: 0.5rem;
+}
+
+.login-card .login-card-body .form-group input {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  width: 100%;
+}
+
+.login-card .login-card-body .form-group input:focus {
+  border-color: #1fbf91;
+  box-shadow: 0 0 0 0.2rem rgba(31, 191, 145, 0.25);
+}
+
+.login-card .login-card-body .login-card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.login-card .login-card-body .login-card-footer button {
+  background-color: #025949;
+  border-color: #025949;
+  color: #fff;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+
+.login-card .login-card-body .login-card-footer button:hover {
+  background-color: #1fbf91;
+  border-color: #1fbf91;
+  color: #fff;
+}
